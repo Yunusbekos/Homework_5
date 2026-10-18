@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n;
+
+    //Task 6
+    /*int n;
     cin >> n;
     int i=0;
     int count=0;
@@ -16,5 +18,28 @@ int main() {
         count=count+a;
     }
     cout << count<< endl;
-    return 0;
+    return 0;*/
+
+    //task 3
+
+    int n;
+    cin>>n;
+    int i=0;
+    int m=0;
+    int count =0;
+    while(i<n) {
+        int x;
+        cin>>x;
+        if (x==1) {
+            count+=1;
+        }
+        else {
+            count =0;
+        }
+        if (count>m) {
+            m=count;
+        }
+        i++;
+    }
+    cout<<m;
 }
