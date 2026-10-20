@@ -234,7 +234,42 @@ int main() {
     //
     //
     // cout << c<<"."<<b<<"."<<a << endl;
+
+
+    // Task 10
+    int n;
+    cin >> n;
+    if (n>5) {
+        int i=5;
+        int d=2;
+        int c=0;
+        int a=2;
+        while (i<n) {
+            while (d*d<=i) {
+                if (i%d==0) {
+                    c=0;
+                    break;
+                }
+                c=1;
+                d++;
+            }
+            d=2;
+            a+=c;
+            i++;
+        }
+        cout<<a<<endl;
+    }
+    else if (n==5 || n==4) {
+        cout<<2<<endl;
+    }
+    else if (n==3) {
+        cout<<1<<endl;
+    }
+    else {
+        cout<<0<<endl;
+    }
 }
+
 
 
 
